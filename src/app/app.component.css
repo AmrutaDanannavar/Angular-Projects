@@ -1,0 +1,27 @@
+.container {
+    background-color: #6b5b95;
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .diary-title {
+    font-size: 28px;
+    color: black;
+  }
+  
+  nav a {
+    margin-left: 10px;
+    text-decoration: none;
+    color:black;
+    font-size: 28px;
+  }
+  
+  nav a:hover {
+    color: white;
+  }

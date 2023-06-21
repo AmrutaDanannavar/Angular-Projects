@@ -1,0 +1,35 @@
+<div id="main-div" class="clearfix">
+    <div id="sidebar-div">
+        <img src="assets/img1/a5.jpg" width="400px" height="580px">
+    </div>
+    <div id="body-div">
+        <div id="body-sub1">
+            <div class="card1">
+                <form [formGroup] ="userForm" >
+                  <div>
+                    <label>Date</label><br>
+                    <input type="date" formControlName="date" placeholder="Date">
+                  </div>
+                  <div>
+                  <label>Subject</label> <br>
+                  <input type="text" formControlName="sub" placeholder="Subject" >
+                  </div>
+                  <div>
+                    <label>Description</label><br>
+                    <textarea formControlName="des" placeholder="Description"></textarea>
+                  </div>
+                  <div>
+                    <label>Feelings</label> <br>
+                    <input type="text" formControlName="feel" placeholder="Feelings">
+                  </div>
+                  <br> 
+                  <div>
+                    <button type="button" (click)="addnote(this.userForm.value)">Save</button>&nbsp; &nbsp;
+                   <!--<button type="button" (click)="reset()">RESET</button>-->
+                  </div>
+                </form>
+        </div>
+        </div>
+    </div>
+       
+</div>
